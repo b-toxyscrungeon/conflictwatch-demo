@@ -51,7 +51,7 @@ Pushing to `main` deploys via `.github/workflows/deploy.yml`.
 
 ### Visitor counter and privacy
 
-The header shows today's unique visitors, counted by
+The header shows the total number of unique visitors, counted by
 [GoatCounter](https://www.goatcounter.com). GoatCounter doesn't use cookies or
 store IP addresses. To turn it on, set a repository variable `GOATCOUNTER_CODE`
 to your GoatCounter site code and enable "Allow adding visitor counts on your

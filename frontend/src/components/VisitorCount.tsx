@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-// Daily unique-visitor counter for the static demo, backed by GoatCounter
+// All-time unique-visitor counter for the static demo, backed by GoatCounter
 // (https://www.goatcounter.com). GoatCounter counts unique visitors without
 // storing IP addresses. Enabled only when VITE_GOATCOUNTER (the site code, e.g.
 // "conflictwatch" for conflictwatch.goatcounter.com) is set at build time, and
@@ -21,12 +21,6 @@ function recordVisit() {
   document.head.appendChild(s);
 }
 
-const today = () => {
-  const d = new Date();
-  const pad = (n: number) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-};
-
 export function VisitorCount() {
   const [count, setCount] = useState<string | null>(null);
 
@@ -34,8 +28,7 @@ export function VisitorCount() {
     if (!ENDPOINT) return;
     recordVisit();
     const path = encodeURIComponent(window.location.pathname);
-    const day = today();
-    fetch(`${ENDPOINT}/counter/${path}.json?start=${day}&end=${day}`)
+    fetch(`${ENDPOINT}/counter/${path}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((j: { count?: string } | null) => setCount(j?.count ?? null))
       .catch(() => setCount(null));
@@ -43,8 +36,8 @@ export function VisitorCount() {
 
   if (!count) return null;
   return (
-    <div className="stats asof" title="Unique visitors today (updates every few hours)">
-      {count} visitor{count === "1" ? "" : "s"} today
+    <div className="stats asof" title="Unique visitors since launch (updates every few hours)">
+      {count} visitor{count === "1" ? "" : "s"}
     </div>
   );
 }

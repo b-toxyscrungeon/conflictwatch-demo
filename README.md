@@ -24,8 +24,8 @@ when the snapshot was taken; hover it for per-source dates.
 
 What's in the snapshot:
 
-- **Sanctions graph**: the full OFAC SDN list (~19k people, organizations, vessels,
-  aircraft and programs, ~24k links), not only the Cuba program.
+- **Sanctions graph**: the full OFAC SDN list (~20k people, organizations, vessels,
+  aircraft and programs, ~25k links), not only the Cuba program.
 - **Map**: aircraft positions over and around Cuba from OpenSky ADS-B. Vessel (AIS)
   positions aren't in this snapshot.
 
@@ -48,6 +48,14 @@ VITE_STATIC=1 npx vite preview                         # check it locally
 ```
 
 Pushing to `main` deploys via `.github/workflows/deploy.yml`.
+
+### Visitor counter and privacy
+
+The header shows today's unique visitors, counted by
+[GoatCounter](https://www.goatcounter.com). GoatCounter doesn't use cookies or
+store IP addresses. To turn it on, set a repository variable `GOATCOUNTER_CODE`
+to your GoatCounter site code and enable "Allow adding visitor counts on your
+website" in GoatCounter's settings. Without the variable, nothing is loaded.
 
 ## Architecture
 

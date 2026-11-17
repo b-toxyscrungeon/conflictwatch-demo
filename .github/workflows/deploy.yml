@@ -40,6 +40,8 @@ jobs:
           VITE_STATIC: "1"
           # served from https://<user>.github.io/<repo>/
           VITE_BASE: /${{ github.event.repository.name }}/
+          # GoatCounter site code (repo Settings → Variables); empty = no counter
+          VITE_GOATCOUNTER: ${{ vars.GOATCOUNTER_CODE }}
 
       - uses: actions/configure-pages@v5
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { api, SnapshotMeta, Stats } from "../api";
+import { api, IS_STATIC, SnapshotMeta, Stats } from "../api";
+import { VisitorCount } from "./VisitorCount";
 
 const SOURCE_LABELS: Record<string, string> = {
   ofac_sdn: "OFAC SDN list",
@@ -70,6 +71,7 @@ export function TopBar({ active }: { active: "graph" | "map" | "wiki" }) {
           Snapshot · data as of {fmtDate(meta.as_of)}
         </div>
       )}
+      {IS_STATIC && <VisitorCount />}
     </div>
   );
 }

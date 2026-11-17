@@ -1,0 +1,20 @@
+[project]
+name = "conflictwatch-backend"
+version = "0.1.0"
+description = "OSINT aggregation backend — entity/relationship graph over public conflict-zone data"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI dependency-injection defaults are idiomatic, not B008 bugs.
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]

@@ -1,0 +1,33 @@
+[
+  {
+    "MessageType": "ShipStaticData",
+    "MetaData": { "MMSI": 356005000, "ShipName": "MAERSK NILE       " },
+    "Message": {
+      "ShipStaticData": {
+        "ImoNumber": 9784271,
+        "CallSign": "3EHM8",
+        "Type": 70,
+        "Destination": "HAVANA"
+      }
+    }
+  },
+  {
+    "MessageType": "PositionReport",
+    "MetaData": { "MMSI": 356005000, "ShipName": "MAERSK NILE       ", "latitude": 23.05, "longitude": -82.3, "time_utc": "2026-07-06 01:00:00" },
+    "Message": {
+      "PositionReport": { "UserID": 356005000, "Latitude": 23.05, "Longitude": -82.3, "Sog": 12.4, "Cog": 270.0, "TrueHeading": 268 }
+    }
+  },
+  {
+    "MessageType": "PositionReport",
+    "MetaData": { "MMSI": 356005000, "ShipName": "MAERSK NILE       ", "latitude": 23.1, "longitude": -82.4, "time_utc": "2026-07-06 01:00:30" },
+    "Message": {
+      "PositionReport": { "UserID": 356005000, "Latitude": 23.1, "Longitude": -82.4, "Sog": 12.1, "Cog": 271.0, "TrueHeading": 269 }
+    }
+  },
+  {
+    "MessageType": "ShipStaticData",
+    "MetaData": { "MMSI": 211222330, "ShipName": "NO POSITION YET   " },
+    "Message": { "ShipStaticData": { "ImoNumber": 9111111, "CallSign": "TEST", "Type": 80 } }
+  }
+]

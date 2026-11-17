@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.local
+*.tsbuildinfo
+
+# Local editor / tooling state
+.claude/settings.local.json
+
+# Data caches (downloaded source files)
+backend/data/cache/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

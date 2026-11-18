@@ -41,6 +41,7 @@ body {
 }
 
 .brand {
+  color: var(--text); /* it's a link: don't inherit the browser's link blue */
   font-weight: 700;
   letter-spacing: 0.5px;
 }

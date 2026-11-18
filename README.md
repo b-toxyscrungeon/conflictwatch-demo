@@ -130,3 +130,16 @@ npm run dev                                         # http://localhost:5173
 ```bash
 cd backend && source .venv/bin/activate && pytest
 ```
+
+## License
+
+Copyright (C) 2026 b-toxyscrungeon
+
+The code is licensed under the [GNU Affero General Public License v3.0](LICENSE)
+(AGPL-3.0). You can use, modify and share it, but anything you build on it and
+distribute or run as a network service must also be released under the AGPL,
+with its source code available to its users.
+
+The license covers the code only. The data in `frontend/public/data/` comes from
+the OFAC SDN list, The OpenSky Network and OpenStreetMap, and stays under those
+sources' own terms.

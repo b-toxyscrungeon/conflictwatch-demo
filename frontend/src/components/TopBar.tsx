@@ -34,7 +34,7 @@ export function TopBar({ active }: { active: "graph" | "map" | "wiki" }) {
   return (
     <div className="topbar">
       <Link to="/" className="brand" style={{ textDecoration: "none" }}>
-        CONFLICT<span>WATCH</span> · Cuba
+        POINE<span>MAP</span> · Cuba
       </Link>
       <div className="tabs">
         <Link to="/graph" className={`tab ${active === "graph" ? "active" : ""}`}>

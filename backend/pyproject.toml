@@ -1,5 +1,5 @@
 [project]
-name = "conflictwatch-backend"
+name = "poinemap-backend"
 version = "0.1.0"
 description = "OSINT aggregation backend — entity/relationship graph over public conflict-zone data"
 requires-python = ">=3.11"

@@ -6,7 +6,7 @@ from app.api import map as map_api
 from app.config import settings
 
 app = FastAPI(
-    title="ConflictWatch API",
+    title="Poinemap API",
     description="OSINT aggregation over public conflict-zone data (Cuba focus).",
     version="0.1.0",
 )

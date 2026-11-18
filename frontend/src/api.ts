@@ -1,4 +1,4 @@
-// Typed client for the ConflictWatch API. Calls are same-origin (Vite proxies /api).
+// Typed client for the Poinemap API. Calls are same-origin (Vite proxies /api).
 
 export interface EntitySummary {
   id: string;

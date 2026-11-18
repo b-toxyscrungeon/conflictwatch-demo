@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // All-time unique-visitor counter for the static demo, backed by GoatCounter
 // (https://www.goatcounter.com). GoatCounter counts unique visitors without
 // storing IP addresses. Enabled only when VITE_GOATCOUNTER (the site code, e.g.
-// "conflictwatch" for conflictwatch.goatcounter.com) is set at build time, and
+// "poinemap" for poinemap.goatcounter.com) is set at build time, and
 // "Allow adding visitor counts on your website" is on in GoatCounter's settings.
 const CODE = import.meta.env.VITE_GOATCOUNTER;
 const ENDPOINT = CODE ? `https://${CODE}.goatcounter.com` : null;

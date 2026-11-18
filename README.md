@@ -1,4 +1,4 @@
-# ConflictWatch
+# Poinemap
 
 Open-source intelligence aggregation over **publicly available** data for conflict
 zones, starting with a focus on **Cuba**. It pulls together open data about ships,
@@ -15,7 +15,7 @@ Both views are projections of a single **entity/relationship graph**.
 
 ## Live demo
 
-**https://b-toxyscrungeon.github.io/conflictwatch-demo/**
+**https://b-toxyscrungeon.github.io/poinemap-demo/**
 
 The demo is a **static snapshot**: no backend runs. Every API answer was exported
 once from the database to JSON (`frontend/public/data/`), and search, filtering and
